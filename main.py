@@ -1,4 +1,4 @@
-class Warrior(object):
+class Warrior():
     def __init__(self, name, endurance, power, age):
         self.name = name
         self.endurance = endurance
@@ -25,3 +25,18 @@ class Warrior(object):
         print(f"выносливость - {self.endurance}")
         print(f"сила - {self.power}")
         print(f"возраст - {self.age}")
+
+war1 = Warrior("Степа", 45, 62, 20)
+war2 = Warrior("Егор", 50, 80, 29)
+
+war1.sleep()
+war1.eat()
+war1.hit()
+war1.walk()
+war1.info()
+
+war2.sleep()
+war2.eat()
+war2.hit()
+war2.walk()
+war2.info()
